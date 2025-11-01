@@ -39,11 +39,6 @@ const getForecast = (lat, lon, callback) => {
         callback(undefined, {
           data: body.current,
         });
-        // callback(undefined, {
-        //   temperature: body.current.temperature,
-        //   feelsLike: body.current.feelslike,
-        //   location: body.location.country,
-        // });
       }
     },
   );

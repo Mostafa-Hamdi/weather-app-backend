@@ -1,8 +1,8 @@
 import { getLatitude, getForecast } from "./utils.js";
 import express from "express";
-
 import cors from "cors";
 
+const port = process.env.PORT || 3000;
 const app = express();
 
 app.use(cors({ origin: "http://localhost:5173" }));
@@ -26,6 +26,6 @@ app.get("/weather", (req, res) => {
   });
 });
 
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log("server is starts up on port 3000");
 });
