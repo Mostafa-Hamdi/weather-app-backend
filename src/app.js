@@ -5,7 +5,7 @@ import cors from "cors";
 const port = process.env.PORT || 3000;
 const app = express();
 
-app.use(cors({ origin: "https://weather-forecast-liart-two.vercel.app" }));
+app.use(cors({ origin: "https://weather-forecast-smoky-kappa.vercel.app" }));
 
 app.get("/weather", (req, res) => {
   if (!req.query.address) {
