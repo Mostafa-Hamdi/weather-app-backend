@@ -5,7 +5,7 @@ import cors from "cors";
 const port = process.env.PORT || 3000;
 const app = express();
 
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors({ origin: "https://weather-app-backend-rkqo.onrender.com" }));
 
 app.get("/weather", (req, res) => {
   if (!req.query.address) {
