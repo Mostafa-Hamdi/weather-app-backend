@@ -1,11 +1,11 @@
 import { getLatitude, getForecast } from "./utils.js";
 import express from "express";
-// import cors from "cors";
+import cors from "cors";
 
 const port = process.env.PORT || 3000;
 const app = express();
 
-// app.use(cors({ origin: "https://weather-app-backend-rkqo.onrender.com/" }));
+app.use(cors({ origin: "https://weather-forecast-liart-two.vercel.app" }));
 
 app.get("/weather", (req, res) => {
   if (!req.query.address) {
